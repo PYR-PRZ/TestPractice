@@ -3,9 +3,6 @@
 
 using namespace std;
 
-// test to see the changes 
-
-
 int payam (int);
 
 int main() {
@@ -18,10 +15,6 @@ cin >> i;
 int a = i;
 int x[a] = {0};
 int result = 0;
-
-
-//sdvusfkvdfv
-//dskuvhsdlv
 
 while (i != 0) {
     if (j <= a && a < num) {
