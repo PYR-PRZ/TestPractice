@@ -14,16 +14,27 @@ using namespace std;
 int main() {
 
     system("cls");
-    
-    char strArray[5][11];
-    for(int i=0 ; i<5 ; i++) {
-        cin.get(strArray[i],10);
-        }
-    cin.get();
 
-    for(int i=0 ; i<5 ; i++) {
-        cout << strArray[i] << "\t";
-        }
+    int x , y;
+    int i ;
+    cout << "How Many string? = ";
+    cin >> x;
+    cout << "How Many charcters for each string? = ";
+    cin >> y;
+
+    cin.ignore();
     
+    char test[x][y];
+
+    for(i=0 ; i<x ; i++) {
+            cout << "Give me the string [" << i <<  "] = ";
+            cin.get(test[i],y);
+            cin.ignore(1000, '\n');
+    }
+
+    for(i=0 ; i<x ; i++) {
+        cout << test[i] << "\t";
+    }
+
 return 0;
 }
